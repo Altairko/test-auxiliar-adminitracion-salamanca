@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Examen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Administrador de Examen</h1>
+    <form id="adminForm">
+        <label for="temaNuevo">Nombre del nuevo tema:</label>
+        <input type="text" id="temaNuevo" name="temaNuevo" required>
+        <br>
+        <label for="preguntasRespuestas">Preguntas y Respuestas (formato: número.- pregunta, respuesta a), respuesta b), respuesta c), respuesta d)):</label>
+        <textarea id="preguntasRespuestas" name="preguntasRespuestas" rows="10" required></textarea>
+        <br>
+        <button type="submit">Agregar Tema</button>
+    </form>
+    <hr>
+    <label for="temaEliminar">Seleccionar tema para ver/eliminar:</label>
+    <select id="temaEliminar"></select>
+    <button id="eliminarTema">Eliminar Tema</button>
+    <br><br>
+    <div id="preguntasExistentes"></div>
+    <br>
+    <button id="irAExamenes">Ir a Exámenes</button>
+    <script src="admin.js"></script>
+</body>
+</html>
+
